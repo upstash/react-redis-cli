@@ -1,4 +1,4 @@
-# React Redis ClI for Upstash Redis
+# React Redis CLI for Upstash Redis
 
 `@upstash/react-redis-cli` is a React component that provides a CLI interface to interact with Upstash Redis.
 
