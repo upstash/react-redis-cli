@@ -143,6 +143,11 @@ export const RedisCli: React.FC<CliProps> = (props) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${props.token}`,
+          ...(process.env.UPSTASH_CONSOLE
+            ? {
+                "Upstash-Telemetry-Platform": "console",
+              }
+            : {}),
         },
         body: JSON.stringify(args),
       })
